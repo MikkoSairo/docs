@@ -25,6 +25,7 @@
           {
             "group": "Get started",
             "pages": [
+              "index",
               "getting_started",
               "frends_concepts"
             ]
@@ -37,7 +38,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "index",
+              "index_orig",
               "quickstart",
               "development"
             ]
