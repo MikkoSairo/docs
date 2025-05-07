@@ -7,13 +7,13 @@ const glossary = {
   "process instance": "View in Frends that shows what a specific process execution did."
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('p').forEach(paragraph => {
-    Object.keys(glossary).forEach(term => {
-      const regex = new RegExp(`\\b${term}\\b`, 'gi'); // 'gi' for global and case-insensitive matching
-      paragraph.innerHTML = paragraph.innerHTML.replace(regex, match => {
-        return `<span class="tooltip" data-tooltip="${glossary[term]}">${match}</span>`;
-      });
+console.log("Got to glossary loading!");
+
+document.querySelectorAll('p').forEach(paragraph => {
+  Object.keys(glossary).forEach(term => {
+    const regex = new RegExp(`\\b${term}\\b`, 'gi'); // 'gi' for global and case-insensitive matching
+    paragraph.innerHTML = paragraph.innerHTML.replace(regex, match => {
+      return `<span class="tooltip" data-tooltip="${glossary[term]}">${match}</span>`;
     });
   });
 });
