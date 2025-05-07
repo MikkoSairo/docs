@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#661166",
+    "primary": "#AA11DD",
     "light": "#6611AA",
     "dark": "#6611AA"
   },
@@ -19,7 +19,8 @@
               "index",
               "quickstart",
               "development",
-              "getting_started"
+              "getting_started",
+              "frends concepts"
             ]
           },
           {
