@@ -11,6 +11,7 @@ const glossary = {
   "process instance": "View in Frends that shows what a specific process execution did."
 };
 
+/*
 document.querySelectorAll('p').forEach(paragraph => {
   Object.keys(glossary).forEach(term => {
     const regex = new RegExp(`\\b${term}\\b`, 'gi'); // 'gi' for global and case-insensitive matching
@@ -19,3 +20,4 @@ document.querySelectorAll('p').forEach(paragraph => {
     });
   });
 });
+*/
