@@ -1,5 +1,5 @@
 
-fetch('glossary.json')
+fetch('/glossary.json')
   .then(response => response.json())
   .then(glossary => {
     document.querySelectorAll('p').forEach(paragraph => {
