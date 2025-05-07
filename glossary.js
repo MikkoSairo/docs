@@ -1,13 +1,15 @@
 
 // Glossary data embedded directly in the JavaScript file
+
+
+console.log("Got to glossary loading!");
+
 const glossary = {
   "process": "Integration flow or logic in Frends."
   "process list": "View in Frends that lists Processes to edit or manage them.",
   "instance list": "List of process executions.",
   "process instance": "View in Frends that shows what a specific process execution did."
 };
-
-console.log("Got to glossary loading!");
 
 document.querySelectorAll('p').forEach(paragraph => {
   Object.keys(glossary).forEach(term => {
