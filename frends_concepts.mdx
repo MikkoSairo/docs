@@ -1,0 +1,170 @@
+---
+title: "Frends Concepts"
+description: "Description of your new file."
+---
+
+# Frends Concepts
+
+Frends is a hybrid integration platform with a focus on flexibility and providing a clean DevOps experience to experienced and newer integration developers alike.
+
+ 
+
+The main focus of a hybrid integration platform is to bring together various systems and services located both in the cloud and in on-premise data centers. With Frends you can model the required integration flows between these systems using a BPMN based visual GUI.
+​
+
+ 
+
+
+Frends accesses both the cloud and on-premise through a distributed Agent architecture where multiple Agents in multiple Environments communicate with one-another through a centralized hub.
+​
+
+Combining these two approaches results in a platform where you can simply install one Agent on-premise and one on the cloud and dictate in the visual BPMN which parts of the integration flow should be executed in which Agent and Frends will take care of the rest.
+
+ 
+
+Dashboard
+ 
+
+
+The Dashboard View comprises of various widgets, such as the deep blue widget indicating successful Processes and the orange one indicating failed Processes. Below these, there is the Errors widget, and to the right, the Process execution graph.
+
+ 
+
+The Dashboard View is fully customizable, allowing the addition of multiple widgets and free positioning of the widgets. The configuration is currently specific to the user and browser, meaning that to maintain the same dashboard layout, the same browser and login information should be used.
+
+ 
+
+Currently, there are four types of widgets available:
+
+The Successful Processes widget shows the number of successful Processes in a given Environment(s). The widget can be configured to display the successful Processes for selected Environments and within a specified time limit.
+
+The Failed Processes widget works similarly to the successful Processes widget, only showing the failed Processes.
+
+The Process executions graph shows either successful or failed Processes in the Environment(s) the user chooses, within the time limit set by the user.
+
+The Errors widget displays the errors within a given Environment(s), and the user can choose the Environments to display the errors for. Errors can be investigated and dismissed through this widget.
+
+ 
+
+As mentioned previously, the view's look and feel will be updated, and additional widgets will be added in the future.
+
+ 
+
+ 
+
+Process View
+The Process View displays a list of Processes deployed to each Agent Group. The list shows whether the Agent has the latest information or not. If an Agent has been inactive for a long time, it is displayed at the top of the view. The user is also notified whether the latest changes to Process configuration or Trigger state have been updated to the Agent.
+
+
+​
+
+
+If the Agent is offline or not responding, this message is shown when hovering over the Trigger icon.
+
+ 
+
+
+When a Process is updated in the UI but not in the Agent, the message "Updating to version X" appears next to the Process name. When the Agent is up to date, only the version number is displayed.
+
+
+When the Process configuration is not updated to the Agent, the message "Updating to version X" is shown.
+
+ 
+
+Similarly, when the Triggers are activated, they might not be immediately active in the Agent. When the Trigger is activated, it is first shown in orange, indicating it is activated, but the Agent is unaware of this. Once the Agent has activated the Trigger, it turns blue.
+
+ 
+
+ 
+
+
+Clicking the Process name takes the user straight to the Process Editor, and clicking on the instance state icon opens the Process Instance list.
+
+ 
+
+ 
+
+
+
+Users have various options in this View. Firstly, they can choose which columns are displayed in the list.
+
+ 
+
+By default, only the State, Start time, Duration, and Error info are displayed. Additionally, users can select columns for Id, Version, Trigger, and Agent.
+
+ 
+
+Users can also use the search tool on the right side of the View and apply a text filter to search for instances based on the text in the Error column and promoted value columns.
+
+ 
+
+ 
+
+Process Editor
+The Frends Process Editor is built on bpnm-js and is highly responsive and flexible. Its philosophy is to create descriptive Processes that can be easily understood by anyone. The Editor comes with the following features.
+
+ 
+
+Copy/paste and group moving functionality
+This feature saves a lot of time. You can copy/paste not only a single Task but also a group of Tasks to quickly prototype an idea. Additionally, you can move multiple Tasks at once to arrange the Process in a way that makes the most sense for your needs.
+
+ 
+
+Expressions
+The Editor has a new Element that allows you to evaluate single expressions and assign them to a variable. There are two expression Elements in the image below: one called "Combine Invoice and InvoiceLines," and another that is being placed.
+
+ 
+
+
+ 
+
+Annotations
+Annotations are Elements that can be added to the Process flow to support Process documentation. They don't execute any code but provide extra information that describes the Process. For example, you can add a Database Storage Element to make it clear when a Task retrieves information from a database.
+
+ 
+
+
+ 
+
+Parameter Editor
+The Parameter Editor works with normal text, C# expressions, and XML, JSON, and SQL highlighting. 
+
+ 
+
+In the image below, the Editor is showing a JSON syntax error.
+
+ 
+
+
+ 
+
+Zooming
+You can use the mouse scroll-wheel combined with the 'Ctrl' key to quickly zoom in and out of your Process. This feature is perfect when you have a large Process that wouldn't otherwise fit in your browser's 100% view.
+
+ 
+
+From the bottom left corner you can toggle the minimap as well as reset the zoom and graph position.
+
+ 
+
+
+ 
+
+Subprocesses and Scopes
+Subprocesses let you create a reusable logic unit that can be shared among many Processes. For example, you can easily create one error handler that is common to all your Processes or reuse any other type of component. In the image below, the "Retrieve customer Information" Task is a call to a Subprocess.
+
+ 
+
+
+Additionally, you can group some functions in one Scope. Scopes let you make a clear statement that some Tasks belong together. In the image below, two Tasks have been grouped in a Scope called "Prepare response." You can also associate Tasks that will affect the Scope, such as having a custom error handler.
+
+ 
+
+Drafts
+Creating a draft lets you save the Process in an incomplete state, so you can come back and finish it later.
+​
+
+
+
+Next, learn how to Create and Edit Processes. 
+​
