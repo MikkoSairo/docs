@@ -1,9 +1,10 @@
 
 // Glossary data embedded directly in the JavaScript file
 const glossary = {
-  "JavaScript": "A programming language commonly used in web development.",
-  "HTML": "The standard markup language for creating web pages.",
-  "CSS": "A style sheet language used for describing the presentation of a document written in HTML or XML."
+  "process": "Integration flow or logic in Frends."
+  "process list": "View in Frends that lists Processes to edit or manage them.",
+  "instance list": "List of process executions.",
+  "process instance": "View in Frends that shows what a specific process execution did."
 };
 
 document.addEventListener('DOMContentLoaded', () => {
