@@ -4,7 +4,7 @@
 
 console.log("Got to glossary loading!");
 
-const my_own_glossary = {
+const my_very_own_glossary = {
   "process": "Integration flow or logic in Frends."
   "process list": "View in Frends that lists Processes to edit or manage them.",
   "instance list": "List of process executions.",
