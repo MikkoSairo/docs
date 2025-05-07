@@ -1,0 +1,40 @@
+---
+title: "New file"
+description: "Description of your new file."
+---
+
+# Getting Started
+
+Integration flows in Frends are referred to as "Processes." Processes consist of Elements such as Triggers, Tasks, Subprocesses, and For-loops. Processes are created by connecting Elements together and configuring their parameters.
+
+ 
+
+The Process List displays the history of Process instances.
+
+ 
+
+ 
+
+
+Processes can be edited by selecting the Process name. Similarly, Tasks, Triggers, and other Elements can be edited by selecting them.
+
+ 
+
+ 
+
+
+Processes can access information specific to a particular Environment by using Environment Variables. For instance, login information to an external system can vary between Test and Production Environments. A Process can access Environment Variables by referencing them with #env.VariableName. If an Environment Variable is within a group, it can be referenced with #env.Group.VariableName or #env.Group["VariableName"]. The latter enables a runtime decision on which variable to use within an Environment Variable group.
+
+
+ The previous Task's result can be accessed with #result. If the result is an object, the properties can be accessed with #result.Content. Specific Tasks' results, not just the last one, can be accessed with #result[TaskName]. These can be chained together, for example, #result[TaskName].Content. Tasks can be installed under Administration -> Tasks and their documentation can be found here and here.
+
+ 
+
+You can test a Task's parameters in the Frends Process Editor by selecting Show Advanced Settings -> Create New Test.
+
+ 
+
+ 
+
+
+Once a Process is completed, it can be deployed to other Agent Groups in different Environments. Processes run on the computer (or virtual machine) that hosts the Frends Agent. You can begin exploring Frends on your own or proceed to the Getting Started article.
